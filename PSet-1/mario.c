@@ -3,13 +3,20 @@
 
 int main(void)
 {
-
-int height;
+    int height;
 do
 {
     height = get_int("Height: ");
 
 }
 while (height <= 0 && height >= 23);
-printf("%i\n", height);
+for (int space = height -1; space <= 23; space++)
+{
+    printf(" ");
+}
+for (int hash = 0; hash < height; hash++)
+{
+    printf("#");
+
+}
 }
