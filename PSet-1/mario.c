@@ -24,7 +24,7 @@ int main(void)
             printf(" ");
         }
 //PRINTING HASHES PER ROW
-        for (hash = 0; hash < row + 1; hash++)
+        for (hash = 0; hash < row + 2; hash++)
         {
             printf("#");
         }
