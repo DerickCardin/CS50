@@ -14,12 +14,12 @@ int main(void)
         height = get_int("Height: ");
     }
 
-    while ( height < 0 ||  height > 23);
+    while (height < 0 ||  height > 23);
 
-    for ( row = 0; row < height; row++)
+    for (row = 0; row < height; row++)
     {
         //ADDING SPACES BASED OFF OF TOTAL HEIGHT - 1
-  for (space = 1; space <= height - 1 - row; space++)
+        for (space = 1; space <= height - 1 - row; space++)
         {
             printf(" ");
         }
