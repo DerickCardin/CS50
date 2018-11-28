@@ -39,6 +39,30 @@ int main(void)
     int timesTwo = 0;
     int noTimes = 0;
     int final = 0;
+
+    for(; length > 0; length--)
+    {
+        int digit = ccnum % 10;
+        // printf("length: %i\tDigit: %i\n", length, digit);
+        ccnum = ccnum / 10;
+        if(length % 2 == 0) {
+            int temp = digit * 2;
+            timesTwo += temp / 10 + temp % 10;
+        }
+        else
+        {
+            noTimes += digit;
+        }
+    }
+    // printf("timesTwo: %i\tnoTimes: %i\n", timesTwo, noTimes);
+    final = noTimes + timesTwo;
+    if(final % 10 == 0)
+    {
+        printf("VALID\n");
+    }
+    else {
+        printf("INVALID\n");
+    }
 }
 
 //378282246310005
