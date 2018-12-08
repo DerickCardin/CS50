@@ -7,13 +7,13 @@
 // Converts a fraction formatted as X/Y to eighths
 int duration(string fraction)
 {
-    // TODO
+    // TODO return an int in beats and use wav.length to convert beats to actual time. set beat to 1/8 and have a fraction coverter for 1/2 and 1/4
 }
 
 // Calculates frequency (in Hz) of a note
 int frequency(string note)
 {
-    // TODO return an int in beats and use wav.length to convert beats to actual time. set beat to 1/8 and have a fraction coverter for 1/2 and 1/4
+    // TODO
 }
 
 // Determines whether a string represents a rest
