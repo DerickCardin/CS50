@@ -9,7 +9,7 @@ int main(void)
     printf("Result: %c", duration);
 }
 
-int duration(char fraction)
+int duration(int fraction)
 {
 
     fraction = string[0] / string[2];
