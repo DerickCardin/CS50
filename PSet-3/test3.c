@@ -3,13 +3,14 @@
 
 int main(void)
 {
-    string s = "A\nB\n";
+    char* s = "\n";
 }
 bool is_rest(string s)
 {
    if (s[0] == 0)
    {
        return true;
+       printf("true");
    }
    else
    {
