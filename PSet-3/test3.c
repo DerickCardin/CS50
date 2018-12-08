@@ -1,9 +1,12 @@
 #include <cs50.h>
 #include <stdio.h>
 
+bool is_rest(string);
+
 int main(void)
 {
-    char* s = "\n";
+char* s = "No line break";
+
 }
 bool is_rest(string s)
 {
