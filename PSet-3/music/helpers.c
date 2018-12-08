@@ -19,5 +19,13 @@ int frequency(string note)
 // Determines whether a string represents a rest
 bool is_rest(string s)
 {
-    // TODO check if there is a line break or .\n or .\r and if so return true if not return false
+   if (s[0] == 0)
+   {
+       return true;
+
+   }
+   else
+   {
+       return false;
+   }// TODO check if there is a line break or .\n or .\r and if so return true if not return false
 }
