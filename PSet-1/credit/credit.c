@@ -1,8 +1,9 @@
-#include <cs50.h>
-#include <stdio.h>
+#include<cs50.h>
+#include<stdio.h>
+#include<stdlib.h>
 
 #define MAX16 5599999999999999
-#define MIN16 1000000000000000
+#define MIN16 4000000000000000
 
 #define MAX15 379999999999999
 #define MIN15 340000000000000
@@ -15,7 +16,6 @@ int main(void)
     long long ccnum = get_long_long("Number: ");
     int length = 0;
     printf("%lld\n", ccnum);
-
     if (ccnum >= MIN16 && ccnum <= MAX16)
     {
         printf("card may be Visa or Mastercard\n");
@@ -33,19 +33,18 @@ int main(void)
     }
     else
     {
-    printf("INVALID\n");
-    return 0;
+        printf("INVALID\n");
+        return 0;
     }
     int timesTwo = 0;
     int noTimes = 0;
-    int final = 0;
 
-    for(; length > 0; length--)
+    for (; length > 0; length--)
     {
         int digit = ccnum % 10;
         // printf("length: %i\tDigit: %i\n", length, digit);
         ccnum = ccnum / 10;
-        if(length % 2 == 0) {
+        if (length % 2 == 0) {
             int temp = digit * 2;
             timesTwo += temp / 10 + temp % 10;
         }
@@ -55,14 +54,13 @@ int main(void)
         }
     }
     // printf("timesTwo: %i\tnoTimes: %i\n", timesTwo, noTimes);
-    final = noTimes + timesTwo;
-    if(final % 10 == 0)
+    int final = noTimes + timesTwo;
+    if (final % 10 == 0)
     {
         printf("VALID\n");
     }
-    else {
+    else
+    {
         printf("INVALID\n");
     }
 }
-
-//378282246310005
